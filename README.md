@@ -53,12 +53,13 @@
 ![WhatsApp Image 2025-07-02 at 14 12 03_a7a1dafe](https://github.com/user-attachments/assets/f3789ed2-e9a7-473f-b74b-b469860ba56c)
 
 **Import All Blocks**
+
 ![WhatsApp Image 2025-07-02 at 14 22 48_672273cf](https://github.com/user-attachments/assets/d7b50eaf-74d0-493e-abf6-cc6940c3e89b)
 
 
 ✅ Initialize Library
 **Add All these blocks as it is like picture**
-Choose component and youe webview to show video call layout
+- Choose component and youe webview to show video call layout
 ![WhatsApp Image 2025-07-02 at 14 12 02_f349fed3](https://github.com/user-attachments/assets/753d32f5-19b6-4aff-9c0f-5f5b1abc5d7d)
 
 **To Set Your Call Id Use this block**
@@ -82,3 +83,6 @@ Choose component and youe webview to show video call layout
 **Toggle Video ( true/false )**
 
 ![WhatsApp Image 2025-07-02 at 14 12 04_5815dfcc](https://github.com/user-attachments/assets/a43ef843-aa72-4f2e-a898-d36b38edb239)
+
+
+👉 [**Download Latest Release**](https://github.com/PG-D3V/PG_DevCallService/releases/latest)
