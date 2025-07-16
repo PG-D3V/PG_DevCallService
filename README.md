@@ -28,7 +28,7 @@
 - manually copy the library source into your project blocks.
 
 ## Ensure permissions:
-
+- ACCESS_NETWORK_STATE ( main permision for V2.0 )
 - REGISTER_CALL_PROVIDER
 - CAMERA
 - RECORD_AUDIO
