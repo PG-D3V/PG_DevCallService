@@ -28,13 +28,20 @@
 - manually copy the library source into your project blocks.
 
 ## Ensure permissions:
-- ACCESS_NETWORK_STATE ( main permision for V2.0 )
-- REGISTER_CALL_PROVIDER
-- CAMERA
-- RECORD_AUDIO
-- MODIFY_AUDIO_SETTINGS
-- MODIFY_AUDIO_ROUTING
-- INTERNET
+'<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.permission.REGISTER_CALL_PROVIDER" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+<uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />'
 
 ## 🚀 Getting Started
 **🧰 Requirements**
