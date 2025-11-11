@@ -1,0 +1,277 @@
+[
+  {
+    "code": "",
+    "color": "#FF9C27B0",
+    "name": "PG_DevCallService V3.0",
+    "typeName": "",
+    "palette": "10",
+    "type": "h",
+    "spec": "PG_DevCallService version 3.0"
+  },
+  {
+    "code": "// for source code and tutorial visit my website : search 🔍 on google Pankaj Gulbeer, PG D3v",
+    "color": "#FF000000",
+    "name": "OnCreate Add Initialisation Blocks",
+    "typeName": "",
+    "palette": "10",
+    "type": "h",
+    "spec": "OnCreate Add Initialisation Blocks"
+  },
+  {
+    "code": "\n\nboolean isVideo \u003d %2$s;\n\n%1$s \u003d new PG_DevCallService(%3$s, this, new PG_DevCallService.SimpleCallback() {\n    @Override\n    public void onPeerConnected() {\n        showMessage(\"✅ Connected\");\n    }\n\n    @Override\n    public void onCallStarted() {\n        showMessage(\"📞 Call Started\");\n    }\n\n    @Override\n    public void onCallReceived() {\n        showMessage(\"📥 Call Incoming\");\n    }\n\n    @Override\n    public void onCallEnded() {\n        showMessage(\"❌ Call Ended\");\n    }\n\n    @Override\n    public void onPeerError(String m) {\n        showMessage(\"⚠ \" + m);\n    }\n\n    @Override\n    public void onVideoToggled() {\n        showMessage(\"🎥 Video toggled\");\n    }\n\n    @Override\n    public void onAudioToggled() {\n        showMessage(\"🎙 Audio toggled\");\n    }\n\n\n}, isVideo);  ",
+    "color": "#FFFF9800",
+    "name": "initialize onCreate_copy",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "%m.PG_DevCallService  initialize and set %m.Type call view in %m.view    this block is for default message and toast"
+  },
+  {
+    "code": "true",
+    "color": "#FFFF9800",
+    "name": "Enable Video Call",
+    "typeName": "Type",
+    "palette": "10",
+    "type": "v",
+    "spec": "Video"
+  },
+  {
+    "code": "false",
+    "color": "#FFFF9800",
+    "name": "Enable Audio Call",
+    "typeName": "Type",
+    "palette": "10",
+    "type": "v",
+    "spec": "Audio"
+  },
+  {
+    "code": "\nboolean isVideo \u003d %2$s;\n\n%1$s \u003d new PG_DevCallService(%3$s, this, new PG_DevCallService.SimpleCallback() {\n    %4$s\n}, isVideo);  ",
+    "imports": "",
+    "color": "#FFFF9800",
+    "name": "initialize onCreate",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "%m.PG_DevCallService  initialize and set %m.Type call view in %m.view   this block for custom action"
+  },
+  {
+    "code": " @Override\npublic void onPeerConnected() {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "on connected",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "if id set succes then"
+  },
+  {
+    "code": " @Override\npublic void onCallStarted() {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "on Call Started",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "if Call Started Succes Then"
+  },
+  {
+    "code": " @Override\npublic void onCallReceived() {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "On Call Recieved",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "if Call Recieved Then"
+  },
+  {
+    "code": " @Override\npublic void onCallEnded() {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "On Call Ended",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "if Call Ended Then"
+  },
+  {
+    "code": " @Override\npublic void onPeerError(String m) {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "On Service Error",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "if Service Error then"
+  },
+  {
+    "code": "m",
+    "color": "#FFFF9800",
+    "name": "error message",
+    "typeName": "",
+    "palette": "10",
+    "type": "s",
+    "spec": "error message"
+  },
+  {
+    "code": "@Override\n    public void updateCallTimer(String callDuration) {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "show call duration",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "show call duration "
+  },
+  {
+    "code": "callDuration",
+    "color": "#FFFF9800",
+    "name": "Duration string",
+    "typeName": "",
+    "palette": "10",
+    "type": "s",
+    "spec": "Duration in seconds"
+  },
+  {
+    "code": " @Override\npublic void onVideoToggled() {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "On Video Toggled",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "if Video Toggled Then"
+  },
+  {
+    "code": " @Override\npublic void onAudioToggled() {\n        %1$s\n    }",
+    "color": "#FFFF9800",
+    "name": "On Audio Toggled Then",
+    "typeName": "",
+    "palette": "10",
+    "type": "c",
+    "spec": "if audio toggled then"
+  },
+  {
+    "code": "// Do Not Modify Any blocks if any one modify then the all codes get failure to start video call",
+    "imports": "",
+    "color": "#FF000000",
+    "name": "actions blocks",
+    "typeName": "",
+    "palette": "10",
+    "type": "h",
+    "spec": "Actions Blocks And make calls 🤙"
+  },
+  {
+    "code": "if (%1$s !\u003d null) {\n    %1$s.init(%2$s,%3$s);\n} else {\n    SketchwareUtil.showMessage(getApplicationContext(), \"not ready yet\");\n}",
+    "imports": "",
+    "color": "#FFFF9800",
+    "name": "set custom id",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "%m.PG_DevCallService  set caller id %s  and Initialize with api key %s ",
+    "spec2": ""
+  },
+  {
+    "code": "if (%1$s !\u003d null) {\n    %1$s.startCall(%2$s);\n} else {\n    SketchwareUtil.showMessage(getApplicationContext(), \"cannot start please wait or contact support\");\n}\n",
+    "imports": "",
+    "color": "#FF4CAF50",
+    "name": "start call",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "%m.PG_DevCallService  start call with id %s ",
+    "spec2": ""
+  },
+  {
+    "code": "%1$s.switchCamera();",
+    "color": "#FF9C27B0",
+    "name": "switch camera",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "%m.PG_DevCallService  switch camera"
+  },
+  {
+    "code": "\n// To end call Created By Pankaj Gulbeer Developer\n%1$s.endCall();",
+    "color": "#FFF44336",
+    "name": "end call",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "%m.PG_DevCallService  End onGoing Call 🤙",
+    "spec2": ""
+  },
+  {
+    "code": "\n// To toggle video this lib. created by Pankaj Gulbeer do not modify any blocks if u modify any block then he could not work any more\n%1$s.toggleVideo(%2$s);",
+    "color": "#FF3F51B5",
+    "name": "Toggle Ongoing Video Camera",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "%m.PG_DevCallService  Toggle Video 📷 %b ",
+    "spec2": ""
+  },
+  {
+    "code": "\n// To toggle video this lib. created by Pankaj Gulbeer do not modify any blocks if u modify any block then he could not work any more\n%1$s.toggleAudio(%2$s);",
+    "color": "#FF3F51B5",
+    "name": "toggle audio ",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "%m.PG_DevCallService  Toggle Audio  %b ",
+    "spec2": ""
+  },
+  {
+    "code": "",
+    "color": "#FF9C27B0",
+    "name": "on buttons click do any actions",
+    "typeName": "",
+    "palette": "10",
+    "type": "h",
+    "spec": "Do Actions Change Your UI || inse sirf ui change kr skte ho jaise 1 click me mic On ka icon set karein 2 click me icon off ka icon set karein "
+  },
+  {
+    "code": "}\nboolean isAudioToggle \u003d true;\nboolean isVideoToggle \u003d true;\nboolean isCamSwitch \u003d true;\n{",
+    "color": "#FF9C27B0",
+    "name": "create buttons runable",
+    "typeName": "",
+    "palette": "10",
+    "type": " ",
+    "spec": "Boolean isAudioToggle/isVideoToggle/isCamSwitch"
+  },
+  {
+    "code": "if (isVideoToggle) {\n    %1$s\n   \n    isVideoToggle \u003d false;\n} else {\n    %2$s\n    isVideoToggle \u003d true;\n}",
+    "imports": "",
+    "color": "#FF9E9E9E",
+    "name": "on video button click",
+    "typeName": "",
+    "palette": "10",
+    "type": "e",
+    "spec": "on video button 1st click",
+    "spec2": "on video button 2nd click"
+  },
+  {
+    "code": "if (isAudioToggle) {\n    %1$s\n   \n    isAudioToggle \u003d false;\n} else {\n    %2$s\n    \n    isAudioToggle \u003d true;\n}",
+    "color": "#FF9E9E9E",
+    "name": "on Audio Button click",
+    "typeName": "",
+    "palette": "10",
+    "type": "e",
+    "spec": "on Audio Button 1st click",
+    "spec2": "on Audio Button 2nd click"
+  },
+  {
+    "code": "if (isCamSwitch) {\n    %1$s\n   \n    isCamSwitch \u003d false;\n} else {\n    %2$s\n    \n    isCamSwitch \u003d true;\n}",
+    "imports": "",
+    "color": "#FF9C27B0",
+    "name": "on camera button",
+    "typeName": "",
+    "palette": "10",
+    "type": "e",
+    "spec": "on camera button 1st click",
+    "spec2": "on camera button 2nd click"
+  },
+  {
+    "code": "",
+    "color": "#FF000000",
+    "name": "Contact or support",
+    "typeName": "",
+    "palette": "10",
+    "type": "h",
+    "spec": "Contact Support-  Youtube \u003d @pankajgulbeer , instagram \u003d @pankaj_x86"
+  }
+]
